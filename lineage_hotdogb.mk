@@ -25,6 +25,7 @@ PRODUCT_BRAND := OnePlus
 # Lunaris-Flags
 WITH_GMS := true
 WITH_BCR := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
