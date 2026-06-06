@@ -18,6 +18,12 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Camera
+$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
+
+# OnePlus Camera
+TARGET_SHIP_OOSCAM := true
+
 # Device init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
