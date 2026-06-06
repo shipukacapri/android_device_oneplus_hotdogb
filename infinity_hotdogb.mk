@@ -25,6 +25,8 @@ PRODUCT_BRAND := OnePlus
 # Infinity Flags
 INFINITY_MAINTAINER := Shipu
 TARGET_HAS_UDFPS := true
+# Don't build Aperture
+PRODUCT_NO_CAMERA := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
