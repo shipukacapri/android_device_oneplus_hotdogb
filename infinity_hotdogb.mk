@@ -31,9 +31,9 @@ TARGET_SUPPORTS_BLUR := true
 TARGET_HAS_UDFPS := true 
 
 # Gapps
-WITH_GAPPS := false
+WITH_GAPPS := true
 
-# PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="OnePlus7T-user 12 SKQ1.211113.001 Q.202303230244 release-keys" \
