@@ -12,8 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdogb device
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
-# Inherit some common InfinityX stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit Evolution X common configuration
+# পাথটি সংশোধন করা হয়েছে: common_full_phone.mk থেকে common.mk তে
+$(call inherit-product, vendor/evolution/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := evolution_hotdogb
@@ -22,9 +23,9 @@ PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := HD1901
 PRODUCT_BRAND := OnePlus
 
-# Infinity-X stuff.
-INFINITY_BUILD_TYPE := UNOFFICIAL
-INFINITY_MAINTAINER := JIHAD
+# Evolution X Build stuff
+EVO_BUILD_TYPE := UNOFFICIAL
+EVO_MAINTAINER := JIHAD
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_BLUR := true
