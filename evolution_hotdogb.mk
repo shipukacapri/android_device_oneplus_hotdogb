@@ -13,10 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
 # Inherit some common InfinityX stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := infinity_hotdogb
+PRODUCT_NAME := evolution_hotdogb
 PRODUCT_DEVICE := hotdogb
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := HD1901
