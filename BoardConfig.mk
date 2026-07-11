@@ -9,9 +9,6 @@ include device/oneplus/sm8150-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/oneplus/hotdogb
 
-# ignore vendor namespace restriction 
-BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
-
 # A/B
 AB_OTA_PARTITIONS += \
     odm \
