@@ -18,6 +18,9 @@ AB_OTA_PARTITIONS += \
     vbmeta_system \
     vendor_dlkm
 
+# Compression
+PRODUCT_FS_COMPRESSION := 1
+
 # Display
 TARGET_SCREEN_DENSITY := 420
 
