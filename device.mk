@@ -32,7 +32,8 @@ PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
-    OPlusSystemUIResTarget
+    OPlusSystemUIResTarget \
+    InfinityUpdater
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
