@@ -15,6 +15,9 @@ $(call inherit-product, device/oneplus/hotdogb/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# private key signing
+-include vendor/lineage-priv/keys/keys.mk
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_hotdogb
 PRODUCT_DEVICE := hotdogb
@@ -31,3 +34,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OnePlus7T \
     SystemDevice=OnePlus7T \
     SystemName=OnePlus7T
+
+#RisingOSRevived Flags
+RISING_MAINTAINER := Shipu
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
+TARGET_ENABLE_BLUR := true
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingMaintainer="Shipu" \
+    RisingChipset="Snapdragon 855+"
